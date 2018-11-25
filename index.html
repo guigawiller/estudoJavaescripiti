@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  </head>
-  <body onload="nomeBtn()">
-    <button type="button" class="btn btn-warning" name="button" id="btn"></button>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
 
-      <script type="text/javascript">
-      var jsonString = '{"btn" : {"nome": "botão" }}';
-      var jsonFunctional = JSON.parse(jsonString);
-      function nomeBtn (){
-        document.getElementById("btn").innerHTML = jsonFunctional.nome;
-      }
-      </script>
-  </body>
+<body onload="listar()">
+
+  <div class="container col-xl-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Função</th>
+          <th scope="col">Dificuldade</th>
+        </tr>
+      </thead>
+      <tbody id="resultados">
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+  <script src="js/script.js">
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</body>
+
 </html>
