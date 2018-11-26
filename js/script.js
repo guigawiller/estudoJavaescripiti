@@ -42,7 +42,7 @@ var db = {
       "idade": 48,
       "afiliacao": "Talon, Blackwatch (anteriormente)",
       "nomeVerdadeiro": "Moira O'Deorain",
-      "imgPerfil": "img/moir.png"
+      "imgPerfil": "img/moira.png"
     }
   ]
 };
